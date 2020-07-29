@@ -27,6 +27,7 @@ install:
 	cp $(LIBFILE) $(libdir)/$(LIBFILE).1.0
 	ln -sf $(libdir)/$(LIBFILE).1.0 $(libdir)/$(LIBFILE).1
 	ln -sf $(libdir)/$(LIBFILE).1 $(libdir)/$(LIBFILE)
+	ldconfig
 
 clean:
 	rm -f *.o $(LIBFILE)
